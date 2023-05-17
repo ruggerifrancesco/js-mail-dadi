@@ -1,0 +1,192 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dot-wh: 1.2rem;
+    --dice-wh: 6rem;
+}
+
+/* Dice */
+.dot {
+    background-color: black;
+    width: var(--dot-wh);
+    height: var(--dot-wh);
+    border-radius: 50%;
+}
+
+/* Dice 1 */
+.dice-value1 {
+    background-color: lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 0.5rem;
+}
+    .dice-value1 .dot {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+/* Dice 2 */
+.dice-value2 {
+    background-color: lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 0.5rem;
+}
+    .dice-value2 .dot:nth-child(1) {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    .dice-value2 .dot:nth-child(2) {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+/* Dice 3 */
+.dice-value3 {
+    background-color: lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 0.5rem;
+}
+    .dice-value3 .dot:nth-child(1) {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    .dice-value3 .dot:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+    }
+    .dice-value3 .dot:nth-child(3) {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+/* Dice 4 */
+.dice-value4 {
+    background-color: lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 0.5rem;
+}
+    .dice-value4 .dot:nth-child(1) {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    .dice-value4 .dot:nth-child(2) {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    .dice-value4 .dot:nth-child(3) {
+        position: absolute;
+        left: 0.5rem;
+        bottom: 0.5rem;
+    }
+    .dice-value4 .dot:nth-child(4) {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+/* Dice 5 */
+.dice-value5 {
+    background-color: lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 0.5rem;
+}
+    .dice-value5 .dot:nth-child(1) {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    .dice-value5 .dot:nth-child(2) {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+    .dice-value5 .dot:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .dice-value5 .dot:nth-child(4) {
+        position: absolute;
+        left: 0.5rem;
+        bottom: 0.5rem;
+    }
+    .dice-value5 .dot:nth-child(5) {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+/* Dice 6 */
+.dice-value6 {
+    background-color: lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 0.5rem;
+}
+    .dice-value6 .dot:nth-child(1) {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    .dice-value6 .dot:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 0.5rem;
+        transform: translate(0, -50%);
+    }
+    .dice-value6 .dot:nth-child(3) {
+        position: absolute;
+        left: 0.5rem;
+        bottom: 0.5rem;
+    }
+    .dice-value6 .dot:nth-child(4) {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+    .dice-value6 .dot:nth-child(5) {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        right: 0.5rem;
+        transform: translate(0, -50%);
+    }
+    .dice-value6 .dot:nth-child(6) {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    
+    
