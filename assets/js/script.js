@@ -27,7 +27,7 @@ console.log('JS Loaded Succesfully');
 
             // Result Game
             if (randomUserNumber > randomPcNumber) {
-                console.log(`Hai vinto control il PC!`);
+                console.log(`Hai vinto contro il PC!`);
             } else if (randomUserNumber < randomPcNumber) {
                 console.log(`Immagina perdere contro un PC!`);
             } else {
