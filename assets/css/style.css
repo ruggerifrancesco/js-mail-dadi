@@ -16,6 +16,12 @@
     height: var(--dot-wh);
     border-radius: 50%;
 }
+.dice-structure {
+    border: 2px solid lightgrey;
+    width: var(--dice-wh);
+    height: var(--dice-wh);
+    border-radius: 0.6rem;
+}
 
 /* Dice 1 */
 .dice-value1 {
