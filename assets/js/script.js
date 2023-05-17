@@ -19,12 +19,20 @@ console.log('JS Loaded Succesfully');
             // PC Random Number
             let randomPcNumber = Math.floor(Math.random() * 6) + 1;
             const randomPcOutput = document.getElementById('computerValueOutput');
-            
+
                 if (randomPcNumber >= 1 && randomPcNumber <= 6) { 
                     console.log(`PC random number ${randomPcNumber} is between 1 and 6`);
                     randomPcOutput.innerHTML = randomPcNumber;
                 }
 
+            // Result Game
+            if (randomUserNumber > randomPcNumber) {
+                console.log(`Hai vinto control il PC!`);
+            } else if (randomUserNumber < randomPcNumber) {
+                console.log(`Immagina perdere contro un PC!`);
+            } else {
+                
+            }
         }
     )
 
