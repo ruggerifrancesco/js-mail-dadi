@@ -8,7 +8,12 @@ let randomNumber = Math.round(Math.random() * 6);
 for (let i = 1; i <= 6; i++) {
     // console.log(i);
 
-    
+    // User Input
+    const userValue = parseInt(document.getElementById(userValueInput).value);
+
+    if () {
+
+    }
 }
 
 
