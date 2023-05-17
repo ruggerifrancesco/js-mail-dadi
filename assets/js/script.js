@@ -2,17 +2,23 @@ console.log('JS Loaded Succesfully');
 
 // Dice Section
 
-    // User Input
-    const userValue = parseInt(document.getElementById('userValueInput').value);
-        console.log('Output Test userValue = ' + userValue);
+    // User Random Number
+    let randomUserNumber = Math.floor(Math.random() * 6) + 1;
+    const randomUserOutput = document.getElementById('userValueOutput');
 
-    // PC random Number
-    let randomNumber = Math.floor(Math.random() * 6) + 1;
+        if (randomUserNumber >= 1 && randomUserNumber <= 6) { 
+            console.log(`Your random number ${randomUserNumber} is between 1 and 6`);
+            randomUserOutput.innerHTML = randomUserNumber;
+        }
+
+
+    // PC Random Number
+    let randomPcNumber = Math.floor(Math.random() * 6) + 1;
     const randomPcOutput = document.getElementById('computerValueOutput');
 
-        if (randomNumber >= 1 && randomNumber <= 6) { 
-            console.log(`The random number ${randomNumber} is between 1 and 6`);
-            randomPcOutput.innerHTML = randomNumber;
+        if (randomPcNumber >= 1 && randomPcNumber <= 6) { 
+            console.log(`PC random number ${randomPcNumber} is between 1 and 6`);
+            randomPcOutput.innerHTML = randomPcNumber;
         }
 
     // Button Submit 
@@ -20,7 +26,6 @@ console.log('JS Loaded Succesfully');
     
     submitBtn.addEventListener("click",
         function () {
-
         }
     )
 
