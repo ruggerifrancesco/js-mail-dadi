@@ -42,5 +42,13 @@ console.log('JS Loaded Succesfully');
     )
 
 
-
 // Mail Section
+    // Input Section
+    const emailList = [
+        'general.francescoruggeri@gmail.com',
+        'bimelim507@aicogz.com',
+        'rowoven343@appxapi.com',
+        'xeyoyad156@asuflex.com',
+        'alicerossi78@outlook.com'
+    ];
+
