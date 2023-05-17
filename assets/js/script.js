@@ -16,10 +16,10 @@ console.log('JS Loaded Succesfully');
                     console.log(`Your random number ${randomUserNumber} is between 1 and 6`);
                     randomUserOutput.innerHTML = randomUserNumber;
 
-                    // Clear any previous content inside the diceStructure div
+                    // Clear any previous content inside the Dice Structure div
                     diceUserStructure.innerHTML = '';
 
-                    // Create the correct dice value div and add it to the diceStructure div
+                    // Create the correct dice value div and add it to the Dice Structure div
                     const diceValue = document.createElement('div');
                     diceValue.classList.add(`dice-value${randomUserNumber}`);
                     diceUserStructure.appendChild(diceValue);
@@ -41,15 +41,12 @@ console.log('JS Loaded Succesfully');
                     console.log(`PC random number ${randomPcNumber} is between 1 and 6`);
                     randomPcOutput.innerHTML = randomPcNumber;
 
-                    // Clear any previous content inside the diceStructure div
                     dicePcStructure.innerHTML = '';
                     
-                    // Create the correct dice value div and add it to the diceStructure div
                     const diceValue = document.createElement('div');
                     diceValue.classList.add(`dice-value${randomPcNumber}`);
                     dicePcStructure.appendChild(diceValue);
 
-                    // Create the required number of dot divs and add them to the dice value div
                     for (let i = 0; i < randomPcNumber; i++) {
                         const dot = document.createElement('div');
                         dot.classList.add('dot');
