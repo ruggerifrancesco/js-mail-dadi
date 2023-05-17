@@ -26,12 +26,17 @@ console.log('JS Loaded Succesfully');
                 }
 
             // Result Game
+            const resultGameOutput = document.getElementById('resultGameOutput');
+
             if (randomUserNumber > randomPcNumber) {
                 console.log(`Hai vinto contro il PC!`);
+                resultGameOutput.innerHTML = `Hai vinto contro il PC!`;
             } else if (randomUserNumber < randomPcNumber) {
                 console.log(`Immagina perdere contro un PC!`);
+                resultGameOutput.innerHTML = `Immagina perdere contro un PC!`;
             } else {
                 console.log(`Incredibile Pareggio!`);
+                resultGameOutput.innerHTML = `Incredibile Pareggio!`;
             }
         }
     )
