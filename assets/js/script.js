@@ -31,7 +31,7 @@ console.log('JS Loaded Succesfully');
             } else if (randomUserNumber < randomPcNumber) {
                 console.log(`Immagina perdere contro un PC!`);
             } else {
-                
+                console.log(`Incredibile Pareggio!`);
             }
         }
     )
