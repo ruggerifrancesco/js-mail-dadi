@@ -10,11 +10,27 @@ console.log('JS Loaded Succesfully');
             // User Random Number
             let randomUserNumber = Math.floor(Math.random() * 6) + 1;
             const randomUserOutput = document.getElementById('userValueOutput');
+            const diceStructure = document.getElementById('diceStructure');
 
                 if (randomUserNumber >= 1 && randomUserNumber <= 6) { 
                     console.log(`Your random number ${randomUserNumber} is between 1 and 6`);
                     randomUserOutput.innerHTML = randomUserNumber;
-                }
+
+                    // Clear any previous content inside the diceStructure div
+                    diceStructure.innerHTML = '';
+                                
+                    // Create the correct dice value div and add it to the diceStructure div
+                    const diceValue = document.createElement('div');
+                    diceValue.classList.add(`dice-value${randomUserNumber}`);
+                    diceStructure.appendChild(diceValue);
+                                
+                    // Create the required number of dot divs and add them to the dice value div
+                    for (let i = 0; i < randomUserNumber; i++) {
+                        const dot = document.createElement('div');
+                        dot.classList.add('dot');
+                        diceValue.appendChild(dot);
+                    }
+                } 
 
             // PC Random Number
             let randomPcNumber = Math.floor(Math.random() * 6) + 1;
