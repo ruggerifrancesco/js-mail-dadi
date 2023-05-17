@@ -2,9 +2,9 @@ console.log('JS Loaded Succesfully');
 
 // Dice Section
     // Button Submit 
-    const submitBtn = document.getElementById('submitBtn');
+    const submitDiceBtn = document.getElementById('submitDiceBtn');
     
-    submitBtn.addEventListener("click",
+    submitDiceBtn.addEventListener("click",
         function () {
 
             // User Random Number
@@ -51,4 +51,28 @@ console.log('JS Loaded Succesfully');
         'xeyoyad156@asuflex.com',
         'alicerossi78@outlook.com'
     ];
+    console.log(emailList);
+
+    const emailInput = document.getElementById('emailCheckerInput');
+    const submitEmailBtn = document.getElementById('submitEmailBtn');
+
+    submitEmailBtn.addEventListener('click',
+        function () {
+            let emailFound = false;
+
+            for (let i = 0; i < emailList.length; i++) {
+                if (emailList[i] === emailInput.value) {
+                    emailFound = true;
+                }
+            }
+
+            if (emailFound === true) {
+                console.log('Accesso Effettuato!');
+            } else {
+                console.log('Accesso Negato!');
+            }
+
+        }
+    )
+
 
