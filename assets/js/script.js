@@ -96,7 +96,8 @@ console.log('JS Loaded Succesfully');
                 }
             }
 
-            if (emailFound === true) {
+            // Return alredy true
+            if (emailFound) {
                 console.log('Accesso Effettuato!');
             } else {
                 console.log('Accesso Negato!');
