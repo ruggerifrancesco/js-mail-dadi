@@ -13,31 +13,35 @@
 </head>
 <body>
 
+    <h1>JS Mail && Dadi</h1>
+
     <main>
         <!-- Dice Section -->
-        <section>
-            <h4>Dice Game</h4>
-            <p>
-                Il tuo Numero: <span id="userValueOutput">-</span> 
+        <section class="container">
+            <h2>Dice Game</h2>
+            <p class="label">
+                Risultato del tuo dado: <span id="userValueOutput">-</span> 
             </p>
 
             <div class="dice-structure" id="diceUserStructure">
 
             </div>
-            <p>
-                Numero scelto dal PC: <span id="computerValueOutput">-</span> 
+            <p class="label">
+                Dado lanciato dal PC: <span id="computerValueOutput">-</span> 
             </p>
             <div class="dice-structure" id="dicePcStructure">
                 
             </div>
             <button id="submitDiceBtn">Scopri se hai vinto!</button>
-            <p id="resultGameOutput"></p>
+            <p class="label">
+                Risultato: <span id="resultGameOutput">-</span>
+            </p>
         </section>
 
         <!-- Mail Section -->
-        <section>
-            <h4>Mail Section</h4>
-            <label for="emailCheckerInput">Inserisci una mail</label>
+        <section class="container">
+            <h2>Mail Section</h2>
+            <label class="label" for="emailCheckerInput">Inserisci una mail</label>
             <input type="email" name="emailCheckerInput" id="emailCheckerInput" required>
             <button id="submitEmailBtn">Logga!</button>
         </section>
