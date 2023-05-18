@@ -81,7 +81,7 @@ console.log('JS Loaded Succesfully');
         'xeyoyad156@asuflex.com',
         'alicerossi78@outlook.com'
     ];
-    console.log(emailList);
+    // console.log(emailList);
 
     const emailInput = document.getElementById('emailCheckerInput');
     const submitEmailBtn = document.getElementById('submitEmailBtn');
