@@ -8,7 +8,7 @@ console.log('JS Loaded Succesfully');
         function () {
 
             // User Random Number
-            let randomUserNumber = Math.floor(Math.random() * 6) + 1;
+            const randomUserNumber = Math.floor(Math.random() * 6) + 1;
             const randomUserOutput = document.getElementById('userValueOutput');
             const diceUserStructure = document.getElementById('diceUserStructure');
 
