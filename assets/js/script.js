@@ -33,7 +33,7 @@ console.log('JS Loaded Succesfully');
                 } 
 
             // PC Random Number
-            let randomPcNumber = Math.floor(Math.random() * 6) + 1;
+            const randomPcNumber = Math.floor(Math.random() * 6) + 1;
             const randomPcOutput = document.getElementById('computerValueOutput');
             const dicePcStructure = document.getElementById('dicePcStructure');
 
