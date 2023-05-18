@@ -23,6 +23,7 @@ body {
         rgba(233,190,148,1) 89%);
 
     padding: 0 5rem;
+    user-select: none
 }
 
 h1 {
