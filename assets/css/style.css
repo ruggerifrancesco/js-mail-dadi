@@ -44,7 +44,7 @@ h2 {
 main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     height: 100%;
 }
 
@@ -112,13 +112,11 @@ input {
 .container {
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.9px);
     -webkit-backdrop-filter: blur(8.9px);
     border: 1px solid rgba(255, 255, 255, 0.26);
 
-    height: 70vh;
     width: 28%;
     text-align: center;
     display: flex;
